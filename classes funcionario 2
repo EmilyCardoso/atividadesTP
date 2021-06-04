@@ -1,0 +1,199 @@
+   string Nome1, Nome2;
+            int idade1, idade2;
+
+            Console.WriteLine("digite o nome do primeiro funcionario");
+            Nome1 = Console.ReadLine();
+            Console.WriteLine("digite a idade do primeiro funcionario");
+            idade1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("digite o nome do segundo funcionario");
+            Nome2 = Console.ReadLine();
+            Console.WriteLine("digite a idade do segundo funcionario");
+            idade2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(Nome1 + "tem a idade de" + idade1);
+            Console.WriteLine(Nome2 + "tem a idade de" + idade2);
+            Console.ReadLine();
+            
+        #################################################################################### faz parte segunda parte    
+            
+             Funcionario f = new Funcionario();
+            Funcionario g = new Funcionario();
+
+            Console.WriteLine("informe o nome do priemiro funcionario");
+            f.nome = Console.ReadLine();
+            Console.WriteLine("informe a idade do primeiro funcionario");
+            f.idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("informe o nome do priemiro funcionario");
+            g.nome = Console.ReadLine();
+            Console.WriteLine("informe a idade do primeiro funcionario");
+            g.idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(f.nome + "tem a idade de:" + f.idade);
+            Console.WriteLine(g.nome + "tem a idade de :" + g.idade);
+
+//comparar se é mais velho
+
+            if(f.idade() > g.idade){
+            Console.WriteLine(f.nome+"tem a maior idade");
+            }
+            else(g.idade() <f.idade){
+                Console.WriteLine(f.nome+"tem a maior idade");
+            }
+
+
+            Console.ReadLine();
+            ####################################################################################################
+            
+            conversor  do dolar parte de classes
+            
+            
+            class Dolar
+    {
+
+        public int Qte;
+        public double  Cotacao;
+        public double ValorTotal()
+        {
+            return Qte * Cotacao;
+        }
+        public double IOF()
+        {
+            return Qte * Cotacao * 6 / 100;
+        }
+
+    }
+}
+
+
+
+programa############################################# continuação do dolar
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Conversor c = new Conversor();
+
+
+            Console.WriteLine("usuario, digite a quantidade de dolar:");
+            c.Qte = int.Parse(Console.ReadLine());
+            Console.WriteLine("usuario digite a cotação:");
+            c.cotacao = double.Parse(Console.ReadLine());
+            Console.WriteLine("valor total em R$:" + c.ValorTotal());
+            Console.WriteLine("valor de IOF em R$:"+ c.IOF());
+            Console.ReadLine();
+
+
+
+
+        }
+    }
+}
+
+
+######################################################################################Professor
+namespace Escola
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Aluno a = new Aluno();
+            Aluno b = new Aluno();
+
+            Console.WriteLine("informe o nome do primeiro aluno ");
+            a.Nome = Console.ReadLine();
+            Console.WriteLine("informe a primeira nota ");
+            a.Nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("informe a segunda nota ");
+            a.Nota2 = double.Parse(Console.ReadLine());
+            Console.WriteLine(a.Nome + "tem a nota final de :" + a.NotaFinal());
+           Console.WriteLine(a.Nome+"tem a media de:"+ a.Media ());
+            Console.ReadLine();
+            ////////////////////BBBBBB
+
+            Console.WriteLine("informe o nome do segundo  aluno ");
+            b.Nome = Console.ReadLine();
+            Console.WriteLine("informe a primeira nota ");
+            b.Nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("informe a segunda nota ");
+            b.Nota2 = double.Parse(Console.ReadLine());
+            Console.WriteLine(b.Nome + "tem a nota final de :" + b.NotaFinal());
+            Console.WriteLine(b.Nome + "tem a media de:" + b.Media());
+           
+            if(a.Media()>b.Media()){
+                Console.WriteLine(a.Nome+"tem a media maior");
+            }
+            else{
+               Console.WriteLine(b.Nome+"tem a media maior");
+               }
+            
+            Console.ReadLine();
+        }
+    }
+}
+
+
+#########################################classses aluno 
+{
+    class Aluno
+    {
+        public string Nome;
+        public double Nota1, Nota2;
+
+
+        public double NotaFinal()
+        {
+            return Nota1 + Nota2;
+        }
+        public double Media()
+        {
+            return (Nota1 + Nota2) / 2;
+        }
+    }
+}
+#######################################################################MEtodo funcionario 
+classe
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Funcionario a = new Funcionario();
+            Console.WriteLine("Digite o nome do funcionario ");
+            a.Nome = Console.ReadLine();
+            Console.WriteLine("digite o salario Bruto ");
+            a.Salariobruto = double.Parse(Console.ReadLine());
+            Console.WriteLine("digite o imposto dos saalrio ");
+            a.imposto = double.Parse(Console.ReadLine());
+            Console.WriteLine(a.Nome+ "tem o salario liquido de R$:"+a.SalarioLiquido());
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+##########################################Programa
+namespace Cadastro1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Funcionario a = new Funcionario();
+            Console.WriteLine("Digite o nome do funcionario ");
+            a.Nome = Console.ReadLine();
+            Console.WriteLine("digite o salario Bruto ");
+            a.Salariobruto = double.Parse(Console.ReadLine());
+            Console.WriteLine("digite o imposto dos saalrio ");
+            a.imposto = double.Parse(Console.ReadLine());
+            Console.WriteLine(a.Nome+ "tem o salario liquido de R$:"+a.SalarioLiquido());
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
