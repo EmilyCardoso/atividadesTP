@@ -1,4 +1,7 @@
-   string Nome1, Nome2;
+  aula dia 04 de junho de 2021
+  
+  
+  string Nome1, Nome2;
             int idade1, idade2;
 
             Console.WriteLine("digite o nome do primeiro funcionario");
