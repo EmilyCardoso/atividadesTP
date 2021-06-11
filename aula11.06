@@ -1,0 +1,38 @@
+ class aluno
+    {
+
+        public string Nome;
+        public  double Nota1,Nota2;
+        //metodo para somar as duas notas
+            public double NotaFinal(){
+                return Nota1+ Nota2;
+            }
+
+        // metodo para exibir media
+            public double Media()
+            {
+                return (Nota1 + Nota2) / 2;
+            }
+    }
+}
+#########################
+ class Program
+    {
+        static void Main(string[] args)
+        {
+
+            aluno a = new aluno();
+            Console.WriteLine("informe o nome do aluno:");
+            a.Nome = Console.ReadLine();
+            Console.WriteLine("digite a primeira nota:");
+            a.Nota1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a segunda nota:");
+            a.Nota2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("nota dfinaol do aluno "+a.NotaFinal());
+            Console.WriteLine("media do aluno:" + a.Media());
+            Console.ReadLine();
+
+        }
+
+    }
+}
